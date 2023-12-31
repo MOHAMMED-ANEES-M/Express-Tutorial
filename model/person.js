@@ -2,30 +2,30 @@ const mongoose=require('mongoose')
 
 const personSchema=mongoose.Schema({
     Name:{
-        require:true,
-        type:String,
-        minlength:3
+        required: true,
+        type: String,
+        minlength: 3
     },
     Age:{
-        require:true,
-        type:String,
-        maxlength:2
+        required: true,
+        type: String,
+        maxlength: 2
     },
     State:{
-        require:true,
-        type:String,
-        minlength:3
+        required: true,
+        type: String,
+        minlength: 3
     },
     username:{
-        unique:true,
-        require:true,
-        type:String,
-        minlength:3
+        unique: true,
+        required: true,
+        type: String,
+        minlength: 3
     },
     password:{
-        require:true,
-        type:String,
-        minlength:3
+        required: true,
+        type: String,
+        minlength: 3
     }
 
 })
